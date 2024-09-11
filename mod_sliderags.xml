@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2023 . All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name> SliderAgs</name>
+	<author>alvin gil saldaa</author>
+	<creationDate>October 2023</creationDate>
+	<copyright>Copyright (c) 2023 . All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>alvin_gil@hotmail.com</authorEmail>
+	<authorUrl>https://github.com/alvinalvin</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_sliderags">mod_sliderags.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>form</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_sliderags.ini</language>
+		<language tag="en-GB">en-GB.mod_sliderags.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="images" type="subform" multiple="true" formsource="modules/mod_sliderags/form/slide.xml"
+					label="slide"
+					description="mod_sis_carousel_IMAGES_DESC"	/>
+					<field name="duration" type="text" default="3000" label="duration" description="" size="10" />
+					<field name="navigation" type="radio" default="0" label="navigation" description="">
+			    <option value="0">true</option>
+			    <option value="1">false</option>
+			    </field>
+					<field name="autoplay" type="radio" default="0" label="autoplay" description="">
+			    <option value="0">true</option>
+			    <option value="1">false</option>
+			    </field>
+					<field name="list" type="list" default="1" label="Select a effect" description="">
+          <option value="0">None</option>
+          <option value="1">Fade</option>
+					<option value="2">Slide Over to Top</option>
+					<option value="3">Slide Over to Right</option>
+					<option value="4">Slide Over to Bottom</option>
+					<option value="5">Slide Over to Left</option>
+					</field>
+					<field name="height" type="text" default="300" label="height" description="" size="10" />
+
+
+
+
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
