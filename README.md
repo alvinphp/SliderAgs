@@ -42,6 +42,28 @@
 </ul>
 
 
+<h2>Version [1.0.1] - 2026-01-11</h2>
+alvingil@alvingil-gil:~/repositorios/SliderAgs$ git push origin main 
+Username for 'https://github.com': alvinphp
+Password for 'https://alvinphp@github.com': 
+Enumerando objetos: 14, listo.
+Contando objetos: 100% (14/14), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos: 100% (8/8), listo.
+Escribiendo objetos: 100% (8/8), 2.90 KiB | 1.45 MiB/s, listo.
+Total 8 (delta 4), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/alvinphp/SliderAgs.git
+   a30294e..b72c201  main -> main
+alvingil@alvingil-gil:~/repositorios/SliderAgs$ 
+
+
+<ul>
+<li><b>[actualizando]</b>actualizando para joomla 6.
+</li>
+</ul>
+
+
 <h2>Licencia y derecho de autor </h2>
  
 <p>este módulo es software libre bajo la licencia GNU LESSER GENERAL PUBLIC license. Copyright (C) 2024 Alvin Gil Saldañatodos los derechos  reservados .</p>
