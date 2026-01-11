@@ -6,6 +6,7 @@
 
 // no direct access
 defined('_JEXEC') or die;
+use Joomla\CMS\Helper\ModuleHelper;
 $images	= $params->get("images");
 $arr = (array) $images ;
-require(JModuleHelper::getLayoutPath('mod_sliderags', $params->get('layout', 'default')));
+require ModuleHelper::getLayoutPath('mod_sliderags', $params->get('layout', 'default'));
