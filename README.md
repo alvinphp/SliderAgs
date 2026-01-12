@@ -29,7 +29,7 @@
 
 <h2>Compatibilidad  </h2>
 
-<p>compatible con joomla 5 complemento b/c</p>
+<p>compatible con joomla 6</p>
 
 <h2> Change Log</h2>
 
@@ -51,4 +51,4 @@
 
 <h2>Licencia y derecho de autor </h2>
  
-<p>este módulo es software libre bajo la licencia GNU LESSER GENERAL PUBLIC license. Copyright (C) 2024 Alvin Gil Saldañatodos los derechos  reservados .</p>
+<p>este módulo es software libre bajo la licencia GNU LESSER GENERAL PUBLIC license. Copyright (C) 2024 Alvin Gil Saldaña todos los derechos reservados.</p>
