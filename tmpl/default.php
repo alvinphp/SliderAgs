@@ -32,17 +32,18 @@ if ($autoplay == 1 ) {
   $autoplay = "false";
 }
 
+ $clase = uniqid();
 
 ?>
 <!-- html -->
-<div class="slider slider1">
+<div class="<?php echo $clase; ?>">
   <?php foreach ($arr as $value): ?>
     <img src="<?php echo $value->image; ?>" />
   <?php endforeach; ?>
 </div>
 <!-- script  -->
 <script>
-  $('.slider1').bscSlider({
+  $('.<?php echo $clase; ?>').bscSlider({
    duration: <?php echo $duration; ?>,
    navigation:<?php echo $navigation; ?>,
    autoplay:<?php echo $autoplay; ?>,
